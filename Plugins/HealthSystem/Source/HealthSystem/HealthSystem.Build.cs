@@ -12,5 +12,7 @@ public class HealthSystem : ModuleRules
 			"CoreUObject",
 			"Engine"
 		});
+
+		SetupGameplayDebuggerSupport(Target);
 	}
 }

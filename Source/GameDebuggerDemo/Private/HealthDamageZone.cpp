@@ -21,7 +21,10 @@ void AHealthDamageZone::BeginPlay()
 {
 	Super::BeginPlay();
 
-	GetWorldTimerManager().SetTimer(DamageTimer, this, &AHealthDamageZone::ApplyZoneDamage, TickInterval, true);
+	if (HasAuthority())
+	{
+		GetWorldTimerManager().SetTimer(DamageTimer, this, &AHealthDamageZone::ApplyZoneDamage, TickInterval, true);
+	}
 }
 
 void AHealthDamageZone::ApplyZoneDamage()
