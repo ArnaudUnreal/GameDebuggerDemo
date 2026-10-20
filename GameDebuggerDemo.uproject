@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.6",
+	"Category": "",
+	"Description": "UAI demo - Gameplay Debugger category",
+	"Modules": [
+		{
+			"Name": "GameDebuggerDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "HealthSystem",
+			"Enabled": true
+		}
+	]
+}
