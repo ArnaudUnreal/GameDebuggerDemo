@@ -7,3 +7,4 @@ Saved/
 *.sln
 Plugins/*/Binaries/
 Plugins/*/Intermediate/
+.vsconfig
